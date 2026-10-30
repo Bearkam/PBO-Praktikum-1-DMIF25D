@@ -1,5 +1,7 @@
 <?php
 
+namespace PBO\Marketplace;
+
 class Produk {
 
     //Property
@@ -25,9 +27,6 @@ class Produk {
     }
 }
 
-$produk = new Produk("P0001", "Laptop", 1000000, 5);
-
-
 //hitung pajak
 //$pajak = Produk::PAJAK * 100;
 //$JumlahPajak = $produk->harga * Produk::PAJAK;
@@ -36,19 +35,7 @@ $produk = new Produk("P0001", "Laptop", 1000000, 5);
 //$total = $produk->harga + $JumlahPajak;
 
 //hasil
-echo "Produk: ". $produk->nama;
-echo "<br/>";
 
-echo "Harga: Rp.". $produk->harga;
-echo "<br/>";
-
-echo "Stok: ". $produk->stok;
-echo "<br/>";
-
-echo "Pajak:". $produk->pajak() . "%";
-echo "<br/>";
-
-echo "Total harga setelah pajak: Rp.". $produk->total();
 
 
 
